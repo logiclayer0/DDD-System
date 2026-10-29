@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+env/
+.env
+.pytest_cache/
+.coverage
+htmlcov/
+.streamlit/secrets.toml
+data/session_logs/*.csv
+reports/*.pdf
+!data/session_logs/.gitkeep
+!reports/.gitkeep

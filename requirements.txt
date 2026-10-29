@@ -1,0 +1,12 @@
+streamlit
+opencv-python
+dlib-bin
+scipy
+numpy
+pandas
+matplotlib
+plotly
+Pillow
+reportlab
+imutils
+pytest
