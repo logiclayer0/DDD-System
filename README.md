@@ -182,12 +182,7 @@ Session CSV files are written to `data/session_logs/`; generated reports are wri
 6. Ensure the predictor model is available at `models/shape_predictor_68_face_landmarks.dat` in the deployment environment. Do not commit credentials or secrets.
 7. Test camera permissions, model initialization, report creation, and storage behavior in the deployed environment.
 
-Screenshot placeholders:
 
-```text
-[Screenshot: Streamlit Cloud app settings]
-[Screenshot: Deployed application]
-```
 
 The pinned dlib dependency can be difficult to build on hosted Linux systems and may require a compatible Python/runtime image. Webcam access and writable disk storage also depend on the browser and hosting environment. Streamlit Cloud's filesystem may be reset, and `st.camera_input` is capture-based, not a continuous low-latency video feed.
 
@@ -203,15 +198,6 @@ EAR =      -------------------------
 
 The two eye EAR values are averaged. A value below the configured threshold increments the closed-eye frame counter; an open-eye result resets it. Once the counter reaches the configured consecutive-frame count, the state becomes drowsy and an alert event is logged. EAR behavior varies with subject, camera placement, face orientation, lighting, and landmark quality, so thresholds should be calibrated and should not be treated as medical or safety certification.
 
-## Screenshots
-
-```text
-[Screenshot: Home dashboard]
-[Screenshot: Live detection with landmark overlay]
-[Screenshot: Analytics dashboard]
-[Screenshot: Generated PDF report]
-[Screenshot: Settings and EAR explanation]
-```
 
 ## Troubleshooting
 
